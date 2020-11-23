@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".kuiskosakata.KuisKataSifat">
+
+    <TextView
+        android:id="@+id/question_sifat"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="QUESTION TO ANSWER"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textColor="#F4A460"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="A"
+        android:background="@drawable/drw_daftar"
+        android:textSize="20sp"
+        android:onClick="onClick"
+        android:textColor="#F4A460"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="B"
+        android:background="@drawable/drw_daftar"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        android:textColor="#F4A460"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/choice3"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="C"
+        android:background="@drawable/drw_daftar"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        android:textColor="#F4A460"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/choice4"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="D"
+        android:background="@drawable/drw_daftar"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        android:textColor="#F4A460"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#d4390a"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:id="@+id/score_sifat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:text="Score" />
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score_sifat"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text="0/0" />
+    </RelativeLayout>
+
+</LinearLayout>

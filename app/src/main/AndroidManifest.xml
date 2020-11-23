@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unikom.kotobalearning">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KotobaLearning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.daftarkosakata.DaftarKosakata"
+                  android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.daftarkosakata.KataBenda"
+            android:parentActivityName=".daftarkosakata.DaftarKosakata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.daftarkosakata.KataKerja"
+            android:parentActivityName=".daftarkosakata.DaftarKosakata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.daftarkosakata.KataSifat"
+            android:parentActivityName=".daftarkosakata.DaftarKosakata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.kuiskosakata.KuisKosakata"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.kuiskosakata.KuisKataBenda"
+            android:parentActivityName=".kuiskosakata.KuisKosakata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.kuiskosakata.KuisKataKerja"
+            android:parentActivityName=".kuiskosakata.KuisKosakata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.kuiskosakata.KuisKataSifat"
+            android:parentActivityName=".kuiskosakata.KuisKosakata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.highscore.HighScoreKataBenda"
+            android:parentActivityName=".kuiskosakata.KuisKataBenda">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.highscore.HighScoreKataKerja"
+            android:parentActivityName=".kuiskosakata.KuisKataKerja">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.unikom.kotobalearning.highscore.HighScoreKataSifat"
+            android:parentActivityName=".kuiskosakata.KuisKataSifat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
